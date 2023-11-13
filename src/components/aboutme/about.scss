@@ -1,0 +1,53 @@
+@import "../../app.scss";
+
+.about{
+    background: linear-gradient(180deg, #0c0c1d, #111132);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .titleContainer{
+        display: flex;   
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        z-index: 0;
+        margin-left: auto;
+
+        @include mobile{
+            width: 100%;
+         }
+
+        .title{
+            flex:1;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            font-size: 25px;
+            margin-left: 10px;
+            margin-right: 10px;
+
+            @include mobile{
+               flex-direction: column;
+               text-align:justify;
+               gap: 20px;
+               height: 100%;
+               font-size: 20px;
+               margin-left: 10px;
+               margin-right: 10px;
+               margin-top: 10px;
+             }
+        }
+    }
+    a{
+        color: orange;
+        padding: 3px;
+        font-weight: 900;
+    }
+    a:hover{
+        color:white;
+        font-weight: 1000;
+    }
+}
